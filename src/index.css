@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: 'YekanBakh-Medium';
+  src: local('YekanBakh'),url(./assets/YekanBakh-Medium.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  font-family: 'YekanBakh-Medium';
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

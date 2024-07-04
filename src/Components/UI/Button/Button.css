@@ -1,0 +1,137 @@
+:root {
+    --primary: #fff;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: YekanBakh-Medium;
+    transition: opacity 0.3s;
+  }
+  .btn:hover{
+    opacity: 0.8;
+  }
+  
+  .btn--primary {
+    background-color:#ff6b6c;
+    color: white;
+    border: 1px solid var(--primary);
+    margin-top: -10px;
+  }
+  .btn--small {
+    padding: 5px 20px;
+    border-radius: 7px;
+  }
+  
+  .btn--outline {
+    background-color: #5b5f95 ;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+  }
+  .btn--special{
+    background-color: var(--primary);
+    color: #666;
+    border: 1px solid #cccccc;
+  }
+  .btn--search{
+    background: #ffc52b;
+    color: #fff;
+    border: 1px solid #ffc52b;
+    box-shadow: 2px 2px 30px rgba(255,197,43,.35);
+  }
+  .btn--tour{
+    padding: 20px 55px;
+    background-color: #4186f7;
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    word-break: break-all;
+  }
+  .btn--search--place{
+
+    border: 0;
+    padding: 20px;
+    border-radius: 5px 0 0 5px;
+    background: #7ec856;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #7ec856;
+    box-shadow: 0 0 20px rgba(24,104,188,.07);
+  }
+  .btn--medium {
+    font-size: 12px;
+    border-radius: 8px;
+  }
+  .btn--footer {
+    background-color: var(--primary);
+    color: #666;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+  }
+  .btn--cart {
+    background-color: #fff  ;
+    margin-right: 5px;
+    color: #5b5f95;
+    font-size: 12px;
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+  }
+  .btn--more {
+    background-color: #6c66fc ;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 35px;
+    transition: all 0.3s ease-out;
+    margin-top: 10px;
+    border: #fff 1px solid;
+    border-radius: 50px;
+  }
+  .btn--more:hover{
+    color: rgba(0, 0, 0, 0.9);
+    background-color: #fff;
+    border: #6c66fc 1px solid;
+
+  }
+  .btn--signup{
+    padding: 6px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+    background-color: #6C66F3;
+    color: #fff;
+  }
+  @media screen and (max-width:845px){
+    .btn{
+      font-size: 8px;
+      padding: 8px 10px;
+    }
+    .btn--more{
+      font-size: 15px;
+      padding: 8px 35px;
+    }    
+  }  
+  @media screen and (max-width:760px){
+    .btn--cart{
+      font-size: 8px;
+      padding: 8px 18px;
+    }    
+  }
+  /* .btn--large:hover,
+  .btn--medium:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  } */

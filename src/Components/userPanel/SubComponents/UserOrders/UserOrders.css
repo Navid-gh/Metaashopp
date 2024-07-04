@@ -1,0 +1,96 @@
+.us-orders-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+}
+.us-orders-completed-wrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+}
+.us-orders-completed-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 40px;
+}
+.us-orders-completed{
+    flex: 30%;
+    max-width: 30%;
+}
+.us-orders-wait-wrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+}
+.us-orders-wait-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 40px;
+}
+.us-orders-wait{
+    flex: 30%;
+    max-width: 30%;
+}
+.orders-headers{
+    font-weight: 500;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, #6C66F3 35%, transparent 35%) 100% 1;
+    font-size: 14px;
+    width: 120px;
+}
+@media screen and (max-width:1200px) {
+    .us-orders-wait,.us-orders-completed{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .us-orders-completed-container,.us-orders-wait-container{
+        padding: 0 90px;
+    }
+}
+@media screen and (max-width:850px) {
+    .us-orders-wait,.us-orders-completed{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .us-orders-completed-container,.us-orders-wait-container{
+        padding: 0 190px;
+    }
+}
+@media screen and (max-width:750px) {
+    .us-orders-completed-container,.us-orders-wait-container{
+        padding: 0 150px;
+    }
+}
+@media screen and (max-width:640px) {
+    .us-orders-completed-container,.us-orders-wait-container{
+        padding: 0 120px;
+    }
+}
+@media screen and (max-width:570px) {
+    .us-orders-completed-container,.us-orders-wait-container{
+        padding: 0 90px;
+    }
+}
+@media screen and (max-width:500px) {
+    .us-orders-completed-container,.us-orders-wait-container{
+        padding: 0 55px;
+    }
+}
+@media screen and (max-width:400px) {
+    .us-orders-completed-container,.us-orders-wait-container{
+        padding: 0 25px;
+    }
+}
+@media screen and (max-width:330px) {
+    .us-orders-completed-container,.us-orders-wait-container{
+        padding: 0 0;
+    }
+}

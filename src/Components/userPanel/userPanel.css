@@ -1,0 +1,110 @@
+.user-wrapper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    gap: 2%;
+}
+.user-right-section{
+    flex: 20% 1;
+    max-width: 20%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding: 13px;
+    gap: 25px;
+    box-shadow: -1px 0 6px rgb(108 102 243 / 20%);
+    border-radius: 25px;
+}
+.user-left-section{
+    flex: 78%;
+    max-width: 78%;
+    display: flex;
+    flex-flow: column;
+    height: auto;
+}
+.user-information{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    gap: 10px;
+    width: 100%;
+    background-color: rgb(108 102 243 / 10%);
+    padding: 10px;
+    border-radius: 25px;
+}
+.user-information-name{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-information-summary{
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+}
+.user-information-lines{
+    display: flex;
+    gap: 3px;
+    font-size: 12px;
+    color: #666666;
+}
+.user-navigation-container{
+    display: flex;
+    height: auto;
+    flex-flow: column;
+    width: 100%;
+    list-style: none;
+    gap: 3px;
+}
+.user-navigation-container a{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+} 
+.user-navigation-container a.active{
+    background-color:rgb(108 102 243 / 10%);;
+} 
+
+.user-navigation{
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    gap: 3px;
+    color: #333333;
+    font-size: 14px;
+    cursor: pointer;
+}
+.user-navigation svg{
+    margin-top: 3px;
+}
+@media screen and (max-width:950px) {
+    .user-right-section{
+        flex: 50% 1;
+        max-width: 50%;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        padding: 13px;
+        gap: 25px;
+        box-shadow: -1px 0 6px rgb(108 102 243 / 20%);
+        border-radius: 25px;
+        margin-bottom: 30px;
+    }
+    .user-left-section{
+        flex: 100% 1;
+        max-width: 100%;
+        display: flex;
+        flex-flow: column;
+        height: auto;
+    }
+}
+@media screen and (max-width:572px) {
+    .user-right-section{
+        flex: 100% 1;
+        max-width: 100%;
+    }
+}

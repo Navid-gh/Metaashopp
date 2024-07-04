@@ -1,0 +1,221 @@
+.filter-wrapper{
+    flex: 20%;
+    max-width: 20%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 30px;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+.filter-headers,.filter-brands,.filter-remaining{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-colors{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.filter-header{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.filter-delete{
+    outline: none;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    font-family: YekanBakh-Medium;
+    color: #6c66f3;
+    font-size: 12px;
+}
+.brands,.colors,.rem-text{
+    font-size: 16px;
+}
+.filter-arrow{
+    cursor: pointer;
+}
+.filter-colors-arrow-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-colors-wrapper{
+    width: 100%;
+    transition: .3s;
+    padding: 10px;
+    color: #808080;
+    background-color: rgba(108, 102, 243, 5%);
+    border-radius: 15px;
+}
+.sub-colors-container{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    gap: 7px;
+}
+.sub-color-name-container{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.sub-color{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.sub-color-circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+.sub-color-input{
+    cursor: pointer;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.switch input:checked + .slider {
+    background-color: #6c66f3;
+}
+  
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #6c66f3;
+}
+  
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(21px);
+}
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+.filter-price-range-container{
+    width: 100%;
+}
+.sub-price-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+}
+.prices-range-container{
+    width: 100%;
+    display: flex;
+    gap: 7px;
+    font-size: 14px;
+}
+.open-filter-modal-container{
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    right: -7px;
+    top: 50%;
+    border-radius: 30%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2001;
+}
+.filter-wrapper-mobile-wrapper{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    overflow: auto;
+    flex-flow: column;
+    border: 1px solid rgba(0,0,0,0.2);
+    align-items: center;
+    padding: 15px;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2100;
+    background-color: white;
+    transition: 0.3s;
+}
+.side-filter-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 2000;
+}
+.side-close-button{
+    top: 40px;
+    right: 32%;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+@media screen and (max-width:700px){
+    .filter-wrapper-mobile-wrapper{
+        width: 50%;
+    }
+    .side-close-button{
+        right: 52%;
+    }
+    
+}
+@media screen and (max-width:450px){
+    .filter-wrapper-mobile-wrapper{
+        width: 80%;
+    }
+    .side-close-button{
+        right: 82%;
+    }
+}

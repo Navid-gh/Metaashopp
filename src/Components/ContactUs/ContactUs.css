@@ -1,0 +1,44 @@
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.contact-container {
+  background-color: #f2f2f2;
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.contact-header {
+  font-weight: 500;
+  font-size: 16px;
+}
+.contact-phones-containers {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.phones-header {
+  font-size: 16px;
+  padding: 0 5px;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+.phones-containers {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+@media screen and (max-width: 430px) {
+  .phones-containers {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .contact-container {
+    padding: 20px 1px;
+  }
+}

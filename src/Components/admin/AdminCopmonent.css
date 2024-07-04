@@ -1,0 +1,54 @@
+.admin-products-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.admin-products-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.admin-product-container {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.admin-product-saled-container {
+  display: flex;
+  flex-flow: column;
+  gap: 7px;
+}
+
+.admin-product-saled {
+  display: flex;
+  flex-flow: row;
+  gap: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.admin-send-button {
+  background-color: #6c66f3;
+  padding: 9px;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+  border: none;
+  font-family: YekanBakh-Medium;
+  font-size: 13px;
+  border-radius: 25px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-height: fit-content;
+}

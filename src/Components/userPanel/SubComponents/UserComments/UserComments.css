@@ -1,0 +1,90 @@
+.user-comments-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: center;
+}
+.user-comments-containers-headers{
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, #6C66F3 35%, transparent 35%) 100% 1;
+    font-size: 14px;
+    height: 30px;
+    width: 120px;
+    align-self: flex-start;
+}
+.user-comments-container{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: 80%;
+    list-style: none;
+    gap: 30px;
+}
+.user-comment-container{
+    padding: 22px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    border-radius: 54px;
+    box-shadow: 2px 1px 10px rgb(108 102 243 / 20%);
+}
+.user-comment-img-container{
+    position: relative;
+    max-width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    flex: 10%;
+}
+.user-comment-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.user-comment-details-container{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    gap: 10px;
+    flex: 85%;
+    max-width: 85%;
+}
+.user-comment-title{
+    font-size: 11px;
+}
+.user-comment-comment{
+    font-size: 16px;
+}
+.user-comment-likes{
+
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    font-size: 14px;
+}
+@media screen and (max-width:600px) {
+    .user-comment-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .user-comment-img-container{
+        flex: 100%;
+    }
+    .user-comment-details-container{
+        flex: 100%;
+        max-width: 100%;
+    }
+}

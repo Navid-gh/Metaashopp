@@ -1,0 +1,29 @@
+.success-wrapper{
+    display: flex;
+    margin: 50px 0;
+    padding: 30px;
+    gap: 15px;
+    flex-flow: column;
+}
+.success-header{
+    font-size: 16px;
+    font-weight: 500;
+}
+.success-button{
+    background-color: #6C66F3;
+    padding: 9px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+    outline: none;
+    border: none;
+    font-family: YekanBakh-Medium;
+    font-size: 13px;
+    border-radius: 25px;
+    width: 60%;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
